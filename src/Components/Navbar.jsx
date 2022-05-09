@@ -10,7 +10,7 @@ const Navbar = ()=>{
         <div className="hidden md:flex space-x-20 text-lg">
           <a href="#about" className="hover:bg-red-300 rounded-full pt-2 px-5 cursor-pointer">About</a>
           <a href="#gallery" className="hover:bg-red-300 rounded-full p-2 px-5 cursor-pointer">Gallery</a>
-          <a href="#" className="hover:bg-red-300 rounded-full p-2 px-5 cursor-pointer">Contact</a>
+          <a href="#contact" className="hover:bg-red-300 rounded-full p-2 px-5 cursor-pointer">Contact</a>
         </div>
         <div className="hidden md:flex space-x-5 text-xl">
         <a href="#" target='_blank' className="hover:animate-ping hover:scale-110"><i className="fab fa-pinterest"></i></a>

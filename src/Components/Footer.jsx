@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = ()=>{
   return(
-    <footer className="relative container mx-auto p-10 text-white text-center bg-red-200 space-y-1.5 text-xl rounded-t-md">
+    <footer id="contact" className="relative container mx-auto p-10 text-white text-center bg-red-200 space-y-1.5 text-xl rounded-t-md ">
       <h3 className="">Let's Work Together!</h3>
       <p>Find me on:</p>
       <p className="space-x-5">
