@@ -10,6 +10,15 @@ function App() {
   const [showedPictureId, setShowedPictureId] = React.useState(1);
   const [galleryMode, setGalleryMode] = React.useState(false);
   
+  const getCategories = (data) => {
+    let categoriesSet = new Set();
+    for (const element of data) {
+      categoriesSet.add(element.category);
+    }
+    let categoriesArray = Array.from(categoriesSet);
+    return categoriesArray;
+  };
+
   const showGallery = (id) => {
     setGalleryMode(prevValue => !prevValue);
     setShowedPictureId(id)
@@ -33,23 +42,23 @@ function App() {
 
   return (
     <div className="relative scroll-smooth font-mono " >
-      <Navbar></Navbar>
+      <Navbar getCategories={() => getCategories(images)}></Navbar>
       {galleryMode && 
-      <div className="z-40 flex justify-center content-center bg-white overscroll-none sticky top-0">
-        <button onClick={previousImage} className="h-screen w-fit">
+      <div className="z-40 flex w-screen h-full justify-center content-center bg-red-50 overscroll-none sticky top-0 ">
+        <button onClick={previousImage} className="h-screen w-12">
           <span className='p-4 bg-red-200 text-white m-2 rounded-full'>{'<'}</span>
         </button>
         <button onClick={()=>{setGalleryMode(prevValue => !prevValue)}} className="absolute top-5 left-0">
           <span className='p-4 bg-red-200 text-white m-2 rounded-full'>x</span>
         </button>
-        <img src={filterImagesByCurrentId(showedPictureId)} className="min-h-1/4 max-h-screen w-3/4"/>
-        <button onClick={nextImage} className="h-screen w-fit">
+        <img src={filterImagesByCurrentId(showedPictureId)} className="h-screen max-w-[90%] border-2"/>
+        <button onClick={nextImage} className="h-screen w-12">
           <span className='p-4 bg-red-200 text-white m-2 rounded-full'>{'>'}</span>
         </button>
       </div>
       }
       <About></About>
-      <Gallery showGallery={showGallery}></Gallery>
+      <Gallery showGallery={showGallery} getCategories={getCategories}></Gallery>
       <Footer></Footer>
     </div>
     

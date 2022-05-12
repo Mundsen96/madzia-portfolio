@@ -1,235 +1,282 @@
+import box from './box.png';
+import serce from './serce.png';
+import SS from './SS.png';
+import T from './T.png';
+import U from './U.png';
+import cowUla from './cowUla.png';
+import dlugopis from './dlugopis.jpg';
+import goldenChicken from './goldenChicken.jpg';
+import guliwer from './guliwer.png';
+import ikony from './ikony.png';
+import jordan from './jordan.png';
+import Kalus from './Kalus.png';
+import kosmos from './kosmos.jpg';
+import koszulkaMama from './koszulkaMama.jpg';
+import koszulkaPhobe from './koszulkaPhobe.jpg';
+import koszulkaPhobe1 from './koszulkaPhobe1.jpg';
+import koszulkaPhobe2 from './koszulkaPhoebe2.jpg';
+import lin1 from './lin1.jpg';
+import lin2 from './lin2.jpg';
+import lin3 from './lin3.jpg';
+import lin4 from './lin4.jpg';
+import logo from './logo.png';
+import logoMama from './logoMama.jpg';
+import mamaBiuro from './mamaBiuro.jpg';
+import mypage from './mypage.png';
+import neonFlaming from './neonFlaming.png';
+import neonMagda from './neonMagda.png';
+import notes from './notes.jpg';
+import okladka from './okladka.jpg';
+import owoce from './owoce.png';
+import panda from './panda.png';
+import Phoebe1 from './Phoebe1.png';
+import Phoebe2 from './Phoebe2.png';
+import Phoebe3 from './Phoebe3.jpg';
+import plakat from './plakat.jpg';
+import Seba3 from './Seba3.png';
+import Sebek from './Sebek.png';
+import sowa from './sowa.png';
+import SPEED from './SPEED.png';
+import TOOLSai from './TOOLSai.png';
+import tr from './tr.png';
+import winyl from './winyl.png';
+import wizytowki from './wizytowki.jpg';
+import zyrafa from './zyrafa.png';
+import zyrafa1 from './zyrafa1.png';
+import zyrafa2 from './zyrafa2.png';
 
 const images = [
   {id: 1,
-  name: "box",
-  url: './PortfolioImages/bryły/box.png',
-  category: "bryla"
+  name: "box.png",
+  url: box,
+  category: "Block Graphics"
   },
   {id: 2,
-  name: "serce",
-  url: require('./PortfolioImages/bryły/serce.png').default,
-  category: "bryla"
+  name: "U.png",  
+  url: U,
+  category: "Block Graphics"  
   },
   {id: 3,
-  name: "SS",
-  url: require('./PortfolioImages/bryły/SS.png').default,
-  category: "bryla"
+  name: "SS.png",
+  url: SS,
+  category: "Block Graphics"
   },
   {id: 4,
-  name: "T",
-  url: require('./PortfolioImages/bryły/T.png').default,
-  category: "bryla"
+  name: "T.png",
+  url: T,
+  category: "Block Graphics"
   },
   {id: 5,
-  name: "U",  
-  url: require('./PortfolioImages/bryły/U.png').default,
-  category: "bryla"  
+  name: "serce.png",
+  url: serce,
+  category: "Block Graphics"
   },
   {id: 6,
-  name: "Kalus",
-  url: require('./PortfolioImages/grafika-rastrowa/Kalus.png').default,
-  category: "rastr" 
+  name: "Phoebe1.png",
+  url: Phoebe1,
+  category: "Raster Graphics" 
   },
   {id: 7,
-  name: "Phoebe1",
-  url: require('./PortfolioImages/grafika-rastrowa/Phoebe1.png').default,
-  category: "rastr" 
+  name: "Phoebe2.png",
+  url: Phoebe2,
+  category: "Raster Graphics" 
   },
   {id: 8,
-  name: "Phoebe2",
-  url: require('./PortfolioImages/grafika-rastrowa/Phoebe2.png').default,
-  category: "rastr" 
+  name: "Phoebe3.jpg",
+  url: Phoebe3,
+  category: "Raster Graphics" 
   },
   {id: 9,
-  name: "Phoebe3",
-  url: require('./PortfolioImages/grafika-rastrowa/Phoebe3.jpg').default,
-  category: "rastr" 
+  name: "Kalus.png",
+  url: Kalus,
+  category: "Raster Graphics" 
   },
   {id: 10,
-  name: "Jordan",
-  url: require('./PortfolioImages/grafika-wektorowa/jordan.png').default,
-  category: "wektor" 
+  name: "jordan.png",
+  url: jordan,
+  category: "Vector Graphics" 
   },
   {id: 11,
-  name: "Neon-flaming",
-  url: require('./PortfolioImages/grafika-wektorowa/neon-flaming.png').default,
-  category: "wektor" 
+  name: "neon-flaming.png",
+  url: neonFlaming,
+  category: "Vector Graphics" 
   },
   {id: 12,
-  name: "Neon-Magda",
-  url: require('./PortfolioImages/grafika-wektorowa/neon-Magda.png').default,
-  category: "wektor" 
+  name: "neon-Magda.png",
+  url: neonMagda,
+  category: "Vector Graphics" 
   },
   {id: 13,
-  name: "Seba1",
-  url: require('./PortfolioImages/grafika-wektorowa/Seba(3).png').default,
-  category: "wektor" 
+  name: "Seba(3.png",
+  url: Seba3,
+  category: "Vector Graphics" 
   },
   {id: 14,
-  name: "Seba",
-  url: require('./PortfolioImages/grafika-wektorowa/Sebek.png').default,
-  category: "wektor" 
+  name: "Sebek.png",
+  url: Sebek,
+  category: "Vector Graphics" 
   },
   {id: 15,
-  name: "Ikony",
-  url: require('./PortfolioImages/ikony/ikony.png').default,
-  category: "ikony" 
+  name: "Golden-chicken.jpg",
+  url: goldenChicken,
+  category: "Ilustrations" 
   },
   {id: 16,
-  name: "Owoce",
-  url: require('./PortfolioImages/ikony/owoce.png').default,
-  category: "ikony" 
+  name: "owoce.png",
+  url: owoce,
+  category: "Icons" 
   },
   {id: 17,
-  name: "Cow-Ula",
-  url: require('./PortfolioImages/ilustracje/Cow-Ula.png').default,
-  category: "ilustracje" 
+  name: "Cow-Ula.png",
+  url: cowUla,
+  category: "Ilustrations" 
   },
   {id: 18,
-  name: "Golden-chicken",
-  url: require('./PortfolioImages/ilustracje/Golden-chicken.jpg').default,
-  category: "ilustracje" 
+  name: "Icons.png",
+  url: ikony,
+  category: "Icons" 
   },
   {id: 19,
-  name: "Kosmos",
-  url: require('./PortfolioImages/kolaz/kosmos.jpg').default,
-  category: "kolaz" 
+  name: "kosmos.jpg",
+  url: kosmos ,
+  category: "Collage Graphics" 
   },
   {id: 20,
-  name: "Okladka",
-  url: require('./PortfolioImages/kolaz/okladka.jpg').default,
-  category: "kolaz" 
+  name: "okladka.jpg",
+  url: okladka ,
+  category: "Collage Graphics" 
   },
   {id: 21,
-  name: "Winyl",
-  url: require('./PortfolioImages/kolaz/winyl.png').default,
-  category: "kolaz" 
+  name: "winyl.png",
+  url: winyl ,
+  category: "Collage Graphics" 
   },
   {id: 22,
-  name: "Linoryt1",
-  url: require('./PortfolioImages/linoryt/1.jpg').default,
-  category: "linoryt" 
+  name: "1.jpg",
+  url: lin1 ,
+  category: "Linocut Graphics" 
   },
   {id: 23,
-  name: "Linoryt2",
-  url: require('./PortfolioImages/linoryt/2.jpg').default,
-  category: "linoryt" 
+  name: "2.jpg",
+  url: lin2 ,
+  category: "Linocut Graphics" 
   },
   {id: 24,
-  name: "Linoryt3",
-  url: require('./PortfolioImages/linoryt/3.jpg').default,
-  category: "linoryt" 
+  name: "3.jpg",
+  url: lin3 ,
+  category: "Linocut Graphics" 
   },
   {id: 25,
-  name: "Linoryt4",
-  url: require('./PortfolioImages/linoryt/4.jpg').default,
-  category: "linoryt" 
+  name: "4.jpg",
+  url: lin4 ,
+  category: "Linocut Graphics" 
   },
   {id: 26,
-  name: "Guliwer",
-  url: require('./PortfolioImages/logo/guliwer.png').default,
-  category: "logo" 
+  name: "guliwer.png",
+  url: guliwer ,
+  category: "Logos" 
   },
   {id: 27,
-  name: "Logo",
-  url: require('./PortfolioImages/logo/logo.png').default,
-  category: "logo" 
+  name: "mypage.png",
+  url: mypage ,
+  category: "Logos" 
   },
   {id: 28,
-  name: "LogoMama",
-  url: require('./PortfolioImages/logo/logoMama.jpg').default,
-  category: "logo" 
+  name: "panda.png",
+  url: panda ,
+  category: "Logos" 
   },
   {id: 29,
-  name: "Mypage",
-  url: require('./PortfolioImages/logo/mypage.png').default,
-  category: "logo" 
+  name: "sowa.png",
+  url: sowa ,
+  category: "Logos" 
   },
   {id: 30,
-  name: "Panda",
-  url: require('./PortfolioImages/logo/panda.png').default,
-  category: "logo" 
+  name: "SPEED.png",
+  url: SPEED ,
+  category: "Logos" 
   },
   {id: 31,
-  name: "Sowa",
-  url: require('./PortfolioImages/logo/sowa.png').default,
-  category: "logo" 
+  name: "TOOLSai.png",
+  url: TOOLSai ,
+  category: "Logos" 
   },
   {id: 32,
-  name: "Speed",
-  url: require('./PortfolioImages/logo/SPEED.png').default,
-  category: "logo" 
+  name: "tr.png",
+  url: tr ,
+  category: "Logos" 
   },
   {id: 33,
-  name: "Tool",
-  url: require('./PortfolioImages/logo/TOOLSai.png').default,
-  category: "logo" 
+  name: "zyrafa.png",
+  url: zyrafa ,
+  category: "Logos" 
   },
   {id: 34,
-  name: "Tr",
-  url: require('./PortfolioImages/logo/tr.png').default,
-  category: "logo" 
+  name: "logoMama.jpg",
+  url: logoMama ,
+  category: "Logos" 
   },
   {id: 35,
-  name: "Zyrafa",
-  url: require('./PortfolioImages/logo/zyrafa.png').default,
-  category: "logo" 
+  name: "logo.png",
+  url: logo ,
+  category: "Logos" 
   },
   {id: 36,
-  name: "Dlugopis",
-  url: require('./PortfolioImages/mock-up/dlugopis.jpg').default,
-  category: "mock-up" 
+  name: "koszulka-phoebe2.jpg",
+  url: koszulkaPhobe2 ,
+  category: "Mock-up Usage" 
   },
   {id: 37,
-  name: "Koszulka Mama",
-  url: require('./PortfolioImages/mock-up/koszulka-mama.jpg').default,
-  category: "mock-up" 
+  name: "koszulka-phobe.jpg",
+  url: koszulkaPhobe ,
+  category: "Mock-up Usage" 
   },
   {id: 38,
-  name: "Koszulka Phoebe",
-  url: require('./PortfolioImages/mock-up/koszulka-phobe.jpg').default,
-  category: "mock-up" 
+  name: "koszulka-phobe1.jpg",
+  url: koszulkaPhobe1 ,
+  category: "Mock-up Usage" 
   },
   {id: 39,
-  name: "Koszalka Phoebe1",
-  url: require('./PortfolioImages/mock-up/koszulka-phobe1.jpg').default,
-  category: "mock-up" 
+  name: "dlugopis.jpg",
+  url: dlugopis ,
+  category: "Mock-up Usage" 
   },
   {id: 40,
-  name: "Koszulka Phoebe2",
-  url: require('./PortfolioImages/mock-up/koszulka-phoebe2.jpg').default,
-  category: "mock-up" 
+  name: "koszulka-mama.jpg",
+  url: koszulkaMama ,
+  category: "Mock-up Usage" 
   },
   {id: 41,
-  name: "Mama biuro",
-  url: require('./PortfolioImages/mock-up/mama-biuro.jpg').default,
-  category: "mock-up" 
+  name: "mama-biuro.jpg",
+  url: mamaBiuro ,
+  category: "Mock-up Usage" 
   },
   {id: 42,
-  name: "Notes",
-  url: require('./PortfolioImages/mock-up/notes.jpg').default,
-  category: "mock-up" 
+  name: "notes.jpg",
+  url: notes ,
+  category: "Mock-up Usage" 
   },
   {id: 43,
-  name: "Plakat",
-  url: require('./PortfolioImages/mock-up/plakat.jpg').default,
-  category: "mock-up" 
+  name: "plakat.jpg",
+  url: plakat ,
+  category: "Mock-up Usage" 
   },
   {id: 44,
-  name: "Wizytowki",
-  url: require('./PortfolioImages/mock-up/wizytowki.jpg').default,
-  category: "mock-up" 
+  name: "wizytowki.jpg",
+  url: wizytowki ,
+  category: "Mock-up Usage" 
   },
   {id: 45,
-  name: "Zyrafa1",
-  url: require('./PortfolioImages/mock-up/zyrafa1.png').default,
-  category: "mock-up" 
+  name: "zyrafa1.png",
+  url: zyrafa1 ,
+  category: "Mock-up Usage" 
   },
   {id: 46,
-  name: "Zyrafa2",
-  url: require('./PortfolioImages/mock-up/zyrafa2.png').default,
-  category: "mock-up" 
+  name: "zyrafa2.png",
+  url: zyrafa2 ,
+  category: "Mock-up Usage" 
   },
-] 
+];
+
 
 export default images;
