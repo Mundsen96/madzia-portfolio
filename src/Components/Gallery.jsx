@@ -2,11 +2,9 @@ import * as React from 'react';
 import images from '../Images/Images.js';
 
 const Gallery = (props) => {
-
-
   const appendImagesToCategories = (imageData, categoryGenerated) => {
     let categories = categoryGenerated(imageData);
-    
+
     let imagesGallery = categories.map((category) => {
       let filteredImages = imageData.filter(
         (image) => category === image.category
@@ -31,7 +29,9 @@ const Gallery = (props) => {
           key={category}
           className="static container pb-10 flex flex-wrap justify-center content-start space-x-10 space-y-10 border-b-4"
         >
-          <p className='text-2xl text-center basis-full p-10 bg-red-200 text-white rounded-b-md'>{category}</p>
+          <p className="text-2xl text-center basis-full p-10 bg-red-200 text-white rounded-b-md">
+            {category}
+          </p>
           {mappedFilteredImages}
         </div>
       );
