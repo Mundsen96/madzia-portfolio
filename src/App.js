@@ -64,6 +64,7 @@ function App() {
           <img
             src={filterImagesByCurrentId(showedPictureId)}
             className="h-screen max-w-[90%] border-2"
+            alt=''
           />
           <button onClick={nextImage} className="h-screen w-12">
             <span className="p-4 bg-red-200 text-white m-2 rounded-full">

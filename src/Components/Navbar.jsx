@@ -40,6 +40,7 @@ const Navbar = (props) => {
             target="_blank"
             download="CV-Magdalena-Sokolowska"
             className="hover:bg-red-300 rounded-full p-2 px-5 cursor-pointer"
+            rel="noreferrer"
           >
             My CV
           </a>
@@ -49,6 +50,7 @@ const Navbar = (props) => {
             href="mailto:m.sokolowska16@gmail.com"
             target="_blank"
             className="hover:animate-ping hover:scale-110"
+            rel="noreferrer"
           >
             <i className="fas fa-envelope-square"></i>
           </a>
@@ -56,6 +58,7 @@ const Navbar = (props) => {
             href="https://www.behance.net/magdalesokoow1"
             target="_blank"
             className="hover:animate-ping hover:scale-110"
+            rel="noreferrer"
           >
             <i className="fab fa-behance"></i>
           </a>
@@ -63,6 +66,7 @@ const Navbar = (props) => {
             href="https://www.instagram.com/fot.sokolowska/"
             target="_blank"
             className="hover:animate-ping hover:scale-110"
+            rel="noreferrer"
           >
             <i className="fab fa-instagram"></i>
           </a>

@@ -9,8 +9,8 @@ const About = () => {
       <div className="pt-10 w-2/4">
         <img
           src="https://cdn.pixabay.com/photo/2020/04/06/13/37/coffee-5009730_1280.png"
-          alt="Picture"
           className="rounded-full"
+          alt=''
         />
       </div>
       <div className="p-10 w-2/4 text-lg text-justify my-auto leading-10 shadow-lg rounded-xl leading-relaxed">

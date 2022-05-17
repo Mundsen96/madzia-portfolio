@@ -6,13 +6,13 @@ const Footer = () => {
       <h3 className="">Let's Work Together!</h3>
       <p>Find me on:</p>
       <p className="space-x-5">
-        <a href="https://www.behance.net/magdalesokoow1" target="_blank">
+        <a href="https://www.behance.net/magdalesokoow1" target="_blank" rel="noreferrer">
           <i className="fab fa-behance"></i>
         </a>
-        <a href="https://www.instagram.com/fot.sokolowska/" target="_blank">
+        <a href="https://www.instagram.com/fot.sokolowska/" target="_blank" rel="noreferrer">
           <i className="fab fa-instagram"></i>
         </a>
-        <a href="mailto:m.sokolowska16@gmail.com" target="_blank">
+        <a href="mailto:m.sokolowska16@gmail.com" target="_blank" rel="noreferrer">
           <i className="fas fa-envelope-square"></i>
         </a>
       </p>
