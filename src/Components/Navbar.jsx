@@ -18,10 +18,10 @@ const Navbar = (props) => {
         <div className="hidden md:block p-2">
           <span className="text-xl">Magdalena Sokołowska</span>
         </div>
-        <div className="flex text-sm lg:space-x-10 p-2 md:text-lg">
+        <div className="flex text-sm lg:space-x-10 p-2  md:text-lg">
           <a
             href="#about"
-            className="hover:bg-red-300 rounded-full pt-2 md:px-5 cursor-pointer"
+            className="hover:bg-red-300 rounded-full ml-4 p-2 md:px-5 cursor-pointer"
           >
             About
           </a>
