@@ -23,9 +23,6 @@ function App() {
   const showGallery = (id) => {
     setGalleryMode((prevValue) => !prevValue);
     setShowedPictureId(id);
-    if (!e) var e = window.event;
-    e.cancelBubble = true;
-    if (e.stopPropagation) e.stopPropagation();
   };
 
   const filterImagesByCurrentId = (Id) => {
@@ -85,39 +82,3 @@ function App() {
 }
 
 export default App;
-
-// (
-//   <div className="z-40 flex w-screen h-full justify-center content-center bg-red-50 overscroll-none sticky top-0 ">
-//     <button onClick={previousImage} className="h-screen w-12">
-//       <span className="p-4 bg-red-200 text-white m-2 rounded-full">
-//         {'<'}
-//       </span>
-//     </button>
-//     <button
-//       onClick={() => {
-//         setGalleryMode((prevValue) => !prevValue);
-//       }}
-//       className="absolute top-5 left-0"
-//     >
-//       <span className="p-4 bg-red-200 text-white m-2 rounded-full">
-//         x
-//       </span>
-//     </button>
-//     <img
-//       src={filterImagesByCurrentId(showedPictureId)}
-//       className="h-screen max-w-[90%] border-2"
-//       className="z-40 h-fit static border-2"
-//       alt=''
-//       onClick={(event)=>{
-//         event.stopPropagation();
-//       }}
-//     />
-//     <button onClick={nextImage} className="h-screen w-12">
-//       <span className="p-4 bg-red-200 text-white m-2 rounded-full">
-//     <button onClick={nextImage} className="right-0 z-20 md:static h-screen w-1/2">
-//       <span className="z-50 p-4 bg-red-200 text-white m-2 rounded-full">
-//         {'>'}
-//       </span>
-//     </button>
-//   </div>
-// )}
