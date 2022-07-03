@@ -13,25 +13,25 @@ const Navbar = (props) => {
   });
 
   return (
-    <nav className="relative container mx-auto p-6 bg-red-200 rounded-b-md shadow-lg text-white sticky top-0 z-10">
+    <nav className="relative container mx-auto p-2 md:p-6 bg-red-200 rounded-b-md shadow-lg text-white sticky top-0 z-10">
       <div className="flex items-center justify-between">
         <div className="hidden md:block p-2">
           <span className="text-xl">Magdalena Sokołowska</span>
         </div>
-        <div className="flex lg:space-x-10 text-lg">
+        <div className="flex text-sm lg:space-x-10 p-2 md:text-lg">
           <a
             href="#about"
-            className="hover:bg-red-300 rounded-full pt-2 px-5 cursor-pointer"
+            className="hover:bg-red-300 rounded-full pt-2 md:px-5 cursor-pointer"
           >
             About
           </a>
-          <div className="dropdown hover:bg-red-300 rounded-full p-2 px-5 cursor-pointer">
+          <div className="dropdown hover:bg-red-300 rounded-full p-2 md:px-5 cursor-pointer">
             <button className="dropbtn">Gallery</button>
             <div className="dropdown-content">{dropDownCategories}</div>
           </div>
           <a
             href="#contact"
-            className="hover:bg-red-300 rounded-full p-2 px-5 cursor-pointer"
+            className="hover:bg-red-300 rounded-full p-2 md:px-5 cursor-pointer"
           >
             Contact
           </a>
@@ -39,7 +39,7 @@ const Navbar = (props) => {
             href={CVfile}
             target="_blank"
             download="CV-Magdalena-Sokolowska"
-            className="hover:bg-red-300 rounded-full p-2 px-5 cursor-pointer"
+            className="hover:bg-red-300 rounded-full p-2 md:px-5 cursor-pointer"
             rel="noreferrer"
           >
             My CV
