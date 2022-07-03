@@ -4,16 +4,16 @@ const About = () => {
   return (
     <div
       id="about"
-      className="relative container mx-auto flex flex-col md:flex-row border-b-4 "
+      className="relative container mx-auto flex flex-col mb-10 md:flex-row  "
     >
-      <div className="pt-10 w-2/4">
+      <div className="pt-10 w-full md:w-2/4">
         <img
           src="https://cdn.pixabay.com/photo/2020/04/06/13/37/coffee-5009730_1280.png"
           className="rounded-full"
           alt=''
         />
       </div>
-      <div className="p-10 w-2/4 text-lg text-justify my-auto leading-10 shadow-lg rounded-xl leading-relaxed">
+      <div className="p-10 w-full text-sm text-justify my-auto leading-10 shadow-lg rounded-xl leading-relaxed md:w-2/4 md:text-lg">
         <span className="text-xl">What can I do for you?</span><br/><br/>
         <span>I'm the most comfortable with creating
         Mock-ups and Vector Graphics, however I can do a lot more! </span>

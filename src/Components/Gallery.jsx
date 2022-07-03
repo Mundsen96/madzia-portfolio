@@ -12,7 +12,7 @@ const Gallery = (props) => {
       let mappedFilteredImages = filteredImages.map((image) => {
         return (
           <div
-            className="max-w-sm h-max border-2 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+            className="w-2/4 h-fit md:max-w-sm md:h-max border-2 m-0 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
             key={image.name}
           >
             <img
@@ -27,9 +27,9 @@ const Gallery = (props) => {
         <div
           id={category}
           key={category}
-          className="static container pb-10 flex flex-wrap justify-center content-start space-x-10 space-y-10 border-b-4"
+          className="static container pb-10 flex flex-wrap justify-center content-start space-y-10 border-b-4 md:space-x-10"
         >
-          <p className="text-2xl text-center basis-full p-10 bg-red-200 text-white rounded-b-md">
+          <p className="text-md p-4 md:text-2xl text-center basis-full md:p-10 bg-red-200 text-white rounded-b-md">
             {category}
           </p>
           {mappedFilteredImages}

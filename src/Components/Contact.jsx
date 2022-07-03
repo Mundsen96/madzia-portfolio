@@ -33,7 +33,7 @@ const Contact = () => {
       <h1 className="bg-red-200 p-3 text-white rounded-full text-center">
         Contact me!
       </h1>
-      <div className="w-1/5 py-2">
+      <div className="w-2/4 md:w-1/5 py-2">
         <label htmlFor="Name">Name:</label>
         <input
           type="text"
@@ -42,7 +42,7 @@ const Contact = () => {
           className="w-full py-3 px-5 rounded-md border-4 border-red-200"
         />
       </div>
-      <div className="w-1/5 py-2">
+      <div className="w-2/4 md:w-1/5 py-2">
         <label htmlFor="E-mail">E-mail:</label>
         <input
           type="email"
@@ -51,7 +51,7 @@ const Contact = () => {
           className="w-full py-3 px-5 rounded-md border-4 border-red-200"
         />
       </div>
-      <div className="w-1/5 py-2">
+      <div className="w-2/4 md:w-1/5 py-2">
         <label htmlFor="Message">Message:</label>
         <textarea
           name="Message"

@@ -15,10 +15,10 @@ const Navbar = (props) => {
   return (
     <nav className="relative container mx-auto p-6 bg-red-200 rounded-b-md shadow-lg text-white sticky top-0 z-10">
       <div className="flex items-center justify-between">
-        <div className="p-2">
+        <div className="hidden md:block p-2">
           <span className="text-xl">Magdalena Sokołowska</span>
         </div>
-        <div className="hidden md:flex space-x-20 md:space-x-10 text-lg">
+        <div className="flex lg:space-x-10 text-lg">
           <a
             href="#about"
             className="hover:bg-red-300 rounded-full pt-2 px-5 cursor-pointer"
@@ -45,7 +45,10 @@ const Navbar = (props) => {
             My CV
           </a>
         </div>
-        <div className="hidden md:flex space-x-5 text-xl">
+        {/* <div className='p-2 border rounded-md border-white md:hidden'>
+          
+        </div> */}
+        <div className="hidden lg:block flex space-x-5 text-xl">
           <a
             href="mailto:m.sokolowska16@gmail.com"
             target="_blank"
